@@ -36,11 +36,11 @@ document.addEventListener("scroll", throttleScroll, false);
     var mine_img = document.querySelector(".left-side img"); // Изображение первого блока
     var order = document.querySelector(".form_order"); // Форма заказа первого блока
     var mine_bottom_text = document.querySelector(".bottom_text"); // Текст внизу первого блока
-    var last_h1 = document.querySelector(".header.second h1"); // Заголовок h1 последнего блока
-    var last_h2 = document.querySelector(".header.second h2"); // Заголовок h2 последнего блока
-    var last_img = document.querySelector(".left-side.second img"); // Изображение последнего блока
-    var order_last = document.querySelector(".form_order.second"); // Форма заказа последнего блока
-  
+
+
+
+
+
     function scrolling(e)
     {
     	// Анимация заголовка h1 блока 1
@@ -252,44 +252,6 @@ document.addEventListener("scroll", throttleScroll, false);
 	    		 document.body.classList.remove("podpis3_block-4");
 	    	}
 	    	
-	    	// Анимация заголовка h1 блока 6
-
-    	if(isFullyVisible(last_h1))
-	    	{
-	    		last_h1.classList.add("header_h1");
-	    	}
-	    	else {
-	    		 document.body.classList.remove("header_h1");
-	    	}
-		// Анимация заголовка h2 блока 6
-
-    	if(isFullyVisible(last_h2))
-	    	{
-	    		last_h2.classList.add("header_h2");
-	    	}
-	    	else {
-	    		 document.body.classList.remove("header_h2");
-	    	}
-
-    	// Анимация изображения блока 6
-
-    	if(isFullyVisible(last_img))
-	    	{
-	    		last_img.classList.add("left-side_img");
-	    	}
-	    	else {
-	    		 document.body.classList.remove("left-side_img");
-	    	}
-
-    	// Анимация формы заказа блока 6
-
-    	if(isPartiallyVisible(order_last))
-	    	{
-	    		order_last.classList.add("form_order_anim");
-	    	}
-	    	else {
-	    		 document.body.classList.remove("form_order_anim");
-	    	}
 	    	// if (button_on_top(on_top)) on_top.classList(".active");
 	    
     }
