@@ -6,7 +6,7 @@ $(document).ready(function(){
 				var id = $(this).attr("href");
 				//узнаем высоту от начала страницы до блока на который ссылается якорь
 				var top = $(id).offset().top;
-				//анимируем переход на расстояние - top за 1500 мс
+				//анимируем переход на расстояние - top за 750 мс
 	  			$('body,html').animate({scrollTop: top}, 750);
 			});
 			$(".on_top").on("click", "a", function(event){
@@ -17,7 +17,7 @@ $(document).ready(function(){
 				// var id = "#main";
 				//узнаем высоту от начала страницы до блока на который ссылается якорь
 				var top = $(id).offset().top;
-				//анимируем переход на расстояние - top за 1500 мс
+				//анимируем переход на расстояние - top за 750 мс
 	  			$('body,html').animate({scrollTop: top}, 750);
 			});
 			$("#logo").on("click", "a", function(event){
@@ -28,7 +28,7 @@ $(document).ready(function(){
 				// var id = "#main";
 				//узнаем высоту от начала страницы до блока на который ссылается якорь
 				var top = $(id).offset().top;
-				//анимируем переход на расстояние - top за 1500 мс
+				//анимируем переход на расстояние - top за 750 мс
 	  			$('body,html').animate({scrollTop: top}, 1000);
 			});
 		});
